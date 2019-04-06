@@ -17,6 +17,10 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  for (let i = 1; i <= n; i++) console.log('#'.repeat(i) + ' '.repeat(n - i))
+}
 
-module.exports = steps;
+const steps2 = n => [ ...Array(n)].forEach((e, i) => console.log('#'.repeat(i + 1).padEnd(n, ' ')))
+
+module.exports = steps2;
