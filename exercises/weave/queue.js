@@ -13,6 +13,11 @@ class Queue {
     this.data.unshift(record);
   }
 
+  peek() {
+    const { data } = this
+    return data[data.length - 1]
+  }
+
   remove() {
     return this.data.pop();
   }

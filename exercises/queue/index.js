@@ -72,4 +72,4 @@ class Node {
   getValue() { return this.value }
 }
 
-module.exports = Queue2;
+module.exports = Queue;
